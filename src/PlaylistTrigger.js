@@ -5,7 +5,6 @@ let audioObject = null;
 export default function playlistTrigger() {
   albumTracks.addEventListener('click', (e) => {
     const target = e.target.parentNode;
-    console.log(target);
     if (target.classList.contains('active')) {
       audioObject.pause();
     } else {
